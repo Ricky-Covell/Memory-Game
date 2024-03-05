@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Memory Game!</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <header>
+      <div>
+        <h1>Memory Game!</h1>          
+      </div>
+      <div class="slider-container">
+        <label>
+          <span id="rangelabel">5 Pairs</span>
+        </label>
+        <input type="range" id="pairslider" min="2" max="10" value="5">
+      </div>
+      <div class="menu-container">
+        <span> 
+          <span id="highscore">High Score: N/A</span>
+          <input id="clear" type="button" value="clear history">
+        </span>
+        <input type="button" id="start-button" value="PRESS TO START!">
+        <span id="guesses">Guesses: 0</span>
+      </div>
+    </header>
+
+    <div id="game" data-allow-click="true">
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
